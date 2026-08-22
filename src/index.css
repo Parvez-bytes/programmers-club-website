@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --animate-cell-ripple: cell-ripple var(--duration, 200ms) ease-out
+    var(--delay, 0ms) 1;
+
+  @keyframes cell-ripple {
+    0% {
+      opacity: 0.4;
+    }
+
+    50% {
+      opacity: 0.8;
+    }
+
+    100% {
+      opacity: 0.4;
+    }
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
