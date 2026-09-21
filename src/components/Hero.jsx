@@ -1,7 +1,7 @@
 import React from "react";
 import { BackgroundRippleEffect } from "./ui/background-ripple-effect";
-import StatCard from "./StatCard";
 import { EncryptedText } from "./ui/encrypted-text";
+import DeveloperNetwork from "./DeveloperNetwork";
 
 export default function Hero() {
     return (
@@ -32,7 +32,7 @@ export default function Hero() {
                     items-center
                     px-6
                     pt-24
-                    pb-20
+                    pb-10
                     text-center
                 "
             >
@@ -51,7 +51,7 @@ export default function Hero() {
                     Programmers Club
                 </h1>
 
-                {/* ================= TAGLINE ================= */}
+                {/* Tagline */}
                 <h2
                     className="
                         mt-4
@@ -65,8 +65,8 @@ export default function Hero() {
                         text="Build. Code. Innovate."
                         encryptedClassName="text-neutral-600"
                         revealedClassName="text-neutral-200"
-                        revealDelayMs={70}
-                        flipDelayMs={45}
+                        revealDelayMs={100}
+                        flipDelayMs={2000}
                     />
                 </h2>
 
@@ -142,48 +142,8 @@ export default function Hero() {
                     </a>
                 </div>
 
-                {/* ================= STATS ================= */}
-                <div
-                    className="
-                        mt-14
-                        grid
-                        w-full
-                        max-w-5xl
-                        grid-cols-1
-                        gap-6
-                        sm:grid-cols-3
-                    "
-                >
-                    <StatCard
-                        icon={<i className="ri-group-line" />}
-                        number="350+"
-                        label="Active Members"
-                        colors={[
-                            [0, 200, 255],
-                            [50, 100, 255],
-                        ]}
-                    />
-
-                    <StatCard
-                        icon={<i className="ri-code-s-slash-line" />}
-                        number="50+"
-                        label="Projects Built"
-                        colors={[
-                            [170, 70, 255],
-                            [70, 100, 255],
-                        ]}
-                    />
-
-                    <StatCard
-                        icon={<i className="ri-medal-fill" />}
-                        number="25+"
-                        label="Events / Year"
-                        colors={[
-                            [255, 70, 170],
-                            [255, 120, 40],
-                        ]}
-                    />
-                </div>
+                {/* Developer Network */}
+                <DeveloperNetwork />
             </div>
         </section>
     );
