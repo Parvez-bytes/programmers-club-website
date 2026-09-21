@@ -65,20 +65,23 @@ export const FloatingNav = ({ className }) => {
                 {/* NAVBAR */}
                 <div
                     className="
-                        flex
-                        items-center
-                        gap-1
-                        rounded-full
-                        border
-                        border-white/10
-                        bg-black/85
-                        px-3
-                        py-2
-                        shadow-2xl
-                        backdrop-blur-xl
-                    "
+                            relative
+                            flex
+                            items-center
+                            gap-1
+                            rounded-full
+                            border
+                            border-white/15
+                            bg-neutral-700/40
+                            px-3
+                            py-2
+                            shadow-[0_8px_32px_rgba(0,0,0,0.35)]
+                            backdrop-blur-2xl
+                            backdrop-saturate-150
+                          "
                 >
-                    {/* HOME */}
+                    <div className="pointer-events-none absolute inset-0 rounded-full bg-gradient-to-b from-white/[0.07] via-transparent to-transparent" />                    {/* HOME */}
+                    
                     <a
                         href="#home"
                         className="
