@@ -8,12 +8,13 @@ export default function Hero() {
         <section
             id="home"
             className="
-                relative
-                min-h-screen
-                w-full
-                overflow-hidden
-                bg-[#090909]
-            "
+        relative
+        h-full
+        min-h-0
+        w-full
+        overflow-hidden
+        bg-[#090909]
+    "
         >
             {/* Background */}
             <BackgroundRippleEffect />
@@ -21,20 +22,21 @@ export default function Hero() {
             {/* Hero Content */}
             <div
                 className="
-                    relative
-                    z-10
-                    mx-auto
-                    flex
-                    min-h-screen
-                    w-full
-                    max-w-6xl
-                    flex-col
-                    items-center
-                    px-6
-                    pt-24
-                    pb-10
-                    text-center
-                "
+        relative
+        z-10
+        mx-auto
+        flex
+        h-full
+        min-h-0
+        w-full
+        max-w-6xl
+        flex-col
+        items-center
+        px-6
+        pt-24
+        pb-10
+        text-center
+    "
             >
                 {/* Heading */}
                 <h1
